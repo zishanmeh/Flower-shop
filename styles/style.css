@@ -63,3 +63,32 @@ header {
     width: 100%;
     display: block;
 }
+
+
+
+
+/* For mobile screen */
+@media screen and (max-width: 576px) {
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .heor-flower-images img {
+        width: 60%;
+        margin: auto;
+        border-bottom: 3px solid #E55473;
+    }
+    .hero-details {
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .hero-details h1 {
+        font-size: 2rem;
+    }
+}
