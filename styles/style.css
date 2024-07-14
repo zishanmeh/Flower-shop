@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+h1 {
+    color: #272727;
+}
+.primary-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E55473;
+    cursor: pointer;
+}
+p {
+    line-height: 1.3rem;
+}
+.primary-btn > a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* header styles */
+
+header {
+    background-color: hsla(347, 74%, 61%, 0.10);
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+.hero-details {
+}
+.hero-details h1 {
+    width: 50%;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.hero-details p {
+    font-size: 0.8rem;
+    width: 70%;
+    color: #272727a4;
+    margin: 25px 0;
+}
+.heor-flower-images img {
+    width: 100%;
+    display: block;
+}
