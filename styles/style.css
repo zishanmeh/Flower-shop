@@ -205,11 +205,46 @@ header {
     gap: 30px;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 .instagram-images img{
     width: 200px;
 }
+/* Subscribe */
 
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-image: url("../Flower Asset/Rectangle\ 9.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+.subscribe h1 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+.subscribe-form form{
+    display: flex;
+    gap: 10px;
+}
+.subscribe-form > form > input {
+    padding: 15px 20px;
+    border: none;
+}
+.subscribe-form > form > input:first-child {
+    flex: 1;
+    border-radius: 5px;
+}
+.subscribe-form > form > input:last-child {
+    color: white;
+    font-weight: 600;
+}
 
 
 
@@ -262,6 +297,18 @@ header {
     }
     /* Instagram section */
     .instagram-images {
+        flex-direction: column;
+    }
+    /* Subscribe */
+    .subscribe {
+        margin: auto;
+        padding: 100px 0px;
+        background-size: cover;
+    }
+    .subscribe h1 {
+        font-size: 1.5rem;
+    }
+    .subscribe-form form {
         flex-direction: column;
     }
 }
