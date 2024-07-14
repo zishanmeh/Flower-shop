@@ -5,17 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::before, *::after {
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Lato", sans-serif;
-}
-
-main {
     max-width: 1200px;
-    margin: auto;
 }
 h1 {
     color: #272727;
+}
+p {
+    color: rgba(39, 39, 39, 0.8);
 }
 .primary-btn {
     padding: 10px 15px;
@@ -115,6 +117,25 @@ header {
 .flowers-card a {
     color: #272727;
 }
+/* Mini about styles */
+
+.mini-about {
+    background-color: rgba(39, 39, 39, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    border-radius: 8px;
+}
+.mini-about-card {
+    text-align: center;
+}
+.mini-about-card img {
+    width: 60px;
+    margin-bottom: 20px;
+
+}
 
 
 
@@ -145,8 +166,16 @@ header {
     }
 
     /* Flower card section */
+    .featured-flowers {
+        width: 100%;
+    }
     .feature-flowers-cards {
         flex-direction: column;
         gap: 30px;
     } 
+    /* Mini about section */
+    .mini-about {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
